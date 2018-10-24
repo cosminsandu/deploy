@@ -162,3 +162,9 @@ symfonyDoctrineMigration(){
 restartRunningSupervisors(){
     for p in `sudo supervisorctl status|grep RUNNING|cut -d ":" -f1|sort|uniq`; do sudo supervisorctl restart $p:; done
 }
+
+restartWebService(){
+    sudo systemctl restart nginx.service
+    sudo systemctl restart apache2.service
+    sudo systemctl restart php-fpm.service
+}

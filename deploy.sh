@@ -17,6 +17,7 @@ if [ "$yn" == "y" ]; then
     warmupCache
     symfonyAssetsInstall
     restartRunningSupervisors
+    restartWebService
     exit 0;
 fi
 
@@ -74,5 +75,11 @@ fi
 read -p "Do you want to restart running supervisors? (y/n)  `echo $'\n> '`" yn
 if [ "$yn" == "y" ]; then
     restartRunningSupervisors
+fi
+
+
+read -p "Do you want to restart web service? (y/n)  `echo $'\n> '`" yn
+if [ "$yn" == "y" ]; then
+    restartWebService
 fi
 
