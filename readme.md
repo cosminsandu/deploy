@@ -14,6 +14,6 @@ It performs the following tasks:
  - restart running supervisors
 
 ## Usage
-- Copy/checkout this file in  your user folder (``cd ~``).
+- checkout this project (or copy deploy.sh and deploy_methods.sh files) in  your user folder (``cd ~``).
 - In your release folder (cd -P /var/www/[user.name]-dev.mktp-ro/htdocs/..) run:
 ``sh ~/deploy.sh``
