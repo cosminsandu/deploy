@@ -8,6 +8,7 @@ read -p "Do you want to run all commands? (y/n) `echo $'\n> '`" yn
 if [ "$yn" == "y" ]; then
     gitCheckout
     removeSymfonyCacheFolder
+    removeLogsFiles
     removeVendorFolder
     clearRedisCache
     clearMemCache
@@ -28,6 +29,12 @@ read -p "Do you want to remove symfony cache folder? (y/n) `echo $'\n> '`" yn
 if [ "$yn" == "y" ]; then
     removeSymfonyCacheFolder
 fi
+
+read -p "Do you want to remove logs files? (y/n) `echo $'\n> '`" yn
+if [ "$yn" == "y" ]; then
+    removeLogsFiles
+fi
+
 
 read -p "Do you want to remove vendor folder? (y/n) `echo $'\n> '`" yn
 if [ "$yn" == "y" ]; then

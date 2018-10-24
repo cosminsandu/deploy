@@ -99,6 +99,25 @@ getConsole(){
     fi
 }
 
+removeLogsFiles(){
+    if [ -d "app/logs/" ]
+    then
+        logDir="app/logs/"
+    fi
+    if [ -d "var/logs/" ]
+    then
+        logDir="var/logs/"
+    fi
+
+    if [ -z "$logDir" ];
+    then
+        echo "logs directory can't be found";
+    else
+        echo "remove logs folder $logDir "
+        rm -rf $logDir*.*                          # remove the logs file (only files from logs/ folder)
+    fi
+}
+
 warmupCache(){
     getConsole
 
