@@ -10,8 +10,8 @@ It performs the following tasks:
  - clear Redis Cache
  - clear MemCache
  - composer install
- - warmup cache
- - symfony assets install
+ - warmup Symfony cache
+ - Symfony assets install
  - restart running supervisors
  - restart web service
 
