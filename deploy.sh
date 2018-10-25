@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #methods are defined in different file for readability of main logic
-source ~/deploy_methods.sh
+source /deploy_methods.sh
 
 # MAIN LOGIC
 read -p "Do you want to run all commands? (y/n) `echo $'\n> '`" yn
