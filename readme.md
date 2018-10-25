@@ -16,6 +16,6 @@ It performs the following tasks:
  - restart web service
 
 ## Usage
-- checkout this project (or copy deploy.sh and deploy_methods.sh files) in  your user folder (``cd ~``).
+- checkout this project (or copy deploy folder) in  your user folder (``cd ~``).
 - In your release folder (cd -P /var/www/[user.name]-dev.mktp-ro/htdocs/..) run:
-``sh ~/deploy.sh``
+``sh ~/deploy/deploy.sh``
