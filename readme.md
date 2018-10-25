@@ -5,6 +5,7 @@
 It performs the following tasks:
  - git checkout
  - remove Symfony cache folder
+ - remove logs files
  - remove Vendor folder
  - clear Redis Cache
  - clear MemCache
@@ -12,6 +13,7 @@ It performs the following tasks:
  - warmup cache
  - symfony assets install
  - restart running supervisors
+ - restart web service
 
 ## Usage
 - checkout this project (or copy deploy.sh and deploy_methods.sh files) in  your user folder (``cd ~``).
