@@ -1,7 +1,9 @@
 #!/bin/sh
 
+my_dir="$(dirname "$0")"
+
 #methods are defined in different file for readability of main logic
-source deploy_methods.sh
+source "$my_dir/deploy_methods.sh"
 
 # MAIN LOGIC
 read -p "Do you want to run all commands? (y/n) `echo $'\n> '`" yn
