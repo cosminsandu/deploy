@@ -130,8 +130,6 @@ warmupCache(){
         php $consoleFile cache:warmup --env=prod     # warmup production cache
     fi
 
-    printf "\n====================Installing assets using the symlink option===================\n"
-    php $consoleFile assets:install --symlink
 }
 
 symfonyAssetsInstall(){
